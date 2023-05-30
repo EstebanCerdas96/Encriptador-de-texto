@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="shortcut icon" href="candado.png" type="image/x-icon">
+        <link rel="stylesheet" href="Style-encriptador.css">
+    </head>
+    <body> 
+        <header class="logo">
+            <img src="logo.png" alt="Logo de Alura" id="logo">
+        </header>
+        <main>
+            <div class="container">
+                <div class="encriptar">
+                    <textarea name="texto" class="texto" id="texto" cols="30" rows="5" placeholder="Ingresar texto aqui"></textarea>
+
+                    <div class="terminos">
+                        <p>Solo letras minusculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <input type="button" value="Encriptar" class="botonEncriptar" onclick="encriptar()">
+                        <input type="button" value="Desencriptar" class="botonDesencriptar" onclick="desencriptar()">
+                    </div>
+                </div>  
+                <div class="encriptado">
+                    <img src="encriptar.png" alt="Imagen encriptador" id="imagenEncriptador">
+                    <div class="mensajeEncriptado" id="mensajeEncriptado">
+                        <h2 id="tituloMensaje">Ningun mensaje encontrado</h2>
+                        <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="piePagina">
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/estebancerdasperez/"><i class="fa-brands fa-linkedin" style="color: #9c0404;"></i></a>
+                <a href="https://github.com/EstebanCerdas96"><i class="fa-brands fa-github" style="color: #9c0404;"></i></a>
+            </div>
+        </footer>
+    </body>
+    <script src="Encriptador.js"></script>
+</html>
